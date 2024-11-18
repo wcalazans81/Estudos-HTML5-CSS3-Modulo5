@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Flex-box</title>
+    <style>
+        div.pai {
+            background-color: lightgray;
+            height: 400Px;
+            margin: auto;
+            display: flex; /* Função principal para caixa pai no flex-box */
+        }
+
+        div.pai > div {
+            border: 3px solid white;
+            border-radius: 50%;
+            flex: auto;   /* Função principal para itens filho no flex-box */       
+            background-color: blue;
+            color: white;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Testamdo Flex box</h1>
+    <div class="pai">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+    </div>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamanho de caixas</title>
+    <style>
+        div.pai {
+            background-color: lightsalmon;
+            
+            display: flex; /* Função principal para caixa pai no flex-box */
+            flex-flow: row wrap;
+        }
+
+        div.pai > div {
+            border: 1px solid black;    
+            background-color: lightblue;    
+            text-align: center;  
+            flex-basis: 200px;            
+        }
+    </style>
+</head>
+<body>
+    <h1>Testamdo Flex box</h1>
+    <div class="pai">
+        <div>Aaaaaaaaa aaaaaaa aaa</div>
+        <div>Bbb bbbbbb bbbb</div>
+        <div>E</div>
+        <div>Ddddddddddddddddd</div>
+        <div>Eeee eeee eeee</div>
+        <div>F</div>
+        <div>Ggggg ggggg</div>
+    </div>
+</html> 
